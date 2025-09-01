@@ -19,6 +19,7 @@
             <div class="logo">
     <img src="{% static 'landing_page/logoanimada.png' %}" alt="Agile.AI Logo" class="logo-img">
 </div>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -30,6 +31,14 @@
             <a href="#contato" class="btn-primary">Fale Comigo</a>
         </div>
     </header>
+                <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navMenu = document.querySelector('.navbar nav ul');
+
+            menuToggle.addEventListener('click', () => {
+                navMenu.classList.toggle('active');
+            });
+            </script>
 
     <section id="hero" class="hero-section" style="background-image: url('{% static 'landing_page/cyberpunk_bg.png' %}')">
         <div class="container">
