@@ -1,0 +1,161 @@
+{% load static %} {# ESSA LINHA É CRUCIAL PARA CARREGAR ARQUIVOS ESTÁTICOS #}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio - Desenvolvedor Python - Automação & IA</title>
+    <link rel="stylesheet" href="{% static 'landing_page/style.css' %}">
+    
+    {# Adicionando o Favicon #}
+    <link rel="icon" href="{% static 'landing_page/logob.png' %}" type="image/png">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+    <img src="{% static 'landing_page/logoanimada.png' %}" alt="Agile.AI Logo" class="logo-img">
+</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <a href="#contato" class="btn-primary">Fale Comigo</a>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section" style="background-image: url('{% static 'landing_page/cyberpunk_bg.png' %}')">
+        <div class="container">
+            <h1 class="hero-title">Automatize o Futuro com <span class="highlight-text">Python & IA</span></h1>
+            <p class="hero-subtitle">Desenvolvedor Python especializado em automação de processos e agentes de IA com n8n.</p>
+            <a href="#servicos" class="btn-secondary">Descubra Meus Serviços</a>
+        </div>
+        <div class="hero-glow-effect"></div> {# Elemento para o brilho #}
+    </section>
+
+    <section id="servicos" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Minhas Especialidades</h2>
+            <div class="grid-3">
+                <div class="service-card">
+    <div class="card-inner">
+        <div class="card-front">
+            <i class="fas fa-robot icon-glow"></i>
+            <h3>Automação de Processos</h3>
+            <p>Otimizo fluxos de trabalho, transformando tarefas manuais e repetitivas em processos automáticos e eficientes.</p>
+        </div>
+        <div class="card-back">
+            <h3>Automação de Processos</h3>
+            <ul>
+                <li><i class="fas fa-folder icon-back"></i> Manipulação de Arquivo</li>
+                <li><i class="fas fa-globe icon-back"></i> Web Scraping e Automação de Navegadores</li>
+                <li><i class="fas fa-envelope icon-back"></i> Automação de E-mails e Comunicação</li>
+                <li><i class="fas fa-flask icon-back"></i> Testes de Software</li>
+                <li><i class="fas fa-brain icon-back"></i> Integração com Inteligência Artificial</li>
+                <li><i class="fas fa-clock icon-back"></i> Agendamento de Tarefas</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="service-card">
+    <div class="card-inner">
+        <div class="card-front">
+            <i class="fas fa-brain icon-glow"></i>
+            <h3>Agentes de IA com n8n</h3>
+            <p>Desenvolvo e implemento agentes de inteligência artificial...</p>
+        </div>
+        <div class="card-back">
+            <h3>Agentes de IA com n8n</h3>
+            <ul>
+                <li><i class="fas fa-robot icon-back"></i> Atendimento ao Cliente Automatizado</li>
+                <li><i class="fas fa-chart-bar icon-back"></i> Geração de Relatórios Inteligentes</li>
+                <li><i class="fas fa-search icon-back"></i> Pesquisa e Planejamento Automatizado</li>
+                <li><i class="fas fa-inbox icon-back"></i> Triagem de E-mails e Documentos</li>
+                <li><i class="fas fa-cogs icon-back"></i> Integração de Sistemas e APIs</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="service-card">
+    <div class="card-inner">
+        <div class="card-front">
+            <i class="fas fa-code icon-glow"></i>
+            <h3>Desenvolvimento Python</h3>
+            <p>Crio scripts, APIs e aplicações robustas e escaláveis...</p>
+        </div>
+        <div class="card-back">
+            <h3>Desenvolvimento Python</h3>
+            <p>O foco aqui é o que você faz de mais geral com Python. Você pode descrever habilidades como:</p>
+            <ul>
+                <li><i class="fas fa-laptop-code icon-back"></i> Criação de APIs e Aplicações Web</li>
+                <li><i class="fas fa-database icon-back"></i> Conexão com Bancos de Dados</li>
+                <li><i class="fas fa-cloud icon-back"></i> Implantação e Gerenciamento de Servidores (VPS)</li>
+                <li><i class="fas fa-wrench icon-back"></i> Desenvolvimento de Ferramentas Customizadas</li>
+            </ul>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section light-bg">
+        <div class="container">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <p>Com experiência em desenvolvimento Python, minha paixão é resolver problemas complexos com soluções tecnológicas. Acredito que a automação e a inteligência artificial são pilares para a inovação e o crescimento, e estou aqui para aplicar essas tecnologias no seu negócio.</p>
+                <p>Seja para otimizar operações internas, integrar sistemas ou construir novas ferramentas inteligentes, meu foco é entregar resultados que impulsionam a eficiência e a tomada de decisões estratégicas.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos" class="section dark-bg">
+        <div class="container">
+            <h2 class="section-title">Projetos Recentes</h2>
+            <div class="grid-2">
+                <div class="project-card">
+                    <h3>Automação de Relatórios Financeiros</h3>
+                    <p>Desenvolvimento de um script Python que automatiza a coleta e geração de relatórios financeiros diários, reduzindo o tempo de processamento em 80%.</p>
+                    <a href="#" class="btn-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="project-card">
+                    <h3>Chatbot de Suporte Inteligente (n8n/IA)</h3>
+                    <p>Criação de um chatbot de atendimento ao cliente usando n8n e modelos de IA para responder a FAQs e direcionar tickets, melhorando a experiência do usuário.</p>
+                    <a href="#" class="btn-link">Ver Detalhes <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <p class="cta-text">Mais projetos incríveis em breve!</p>
+        </div>
+    </section>
+
+    <section id="contato" class="section light-bg contact-section">
+        <div class="container">
+            <h2 class="section-title">Vamos Construir o Futuro Juntos!</h2>
+            <p class="contact-subtitle">Interessado em automação, IA ou desenvolvimento Python? Entre em contato para conversarmos sobre seu projeto.</p>
+            <div class="contact-info">
+                <p><i class="fab fa-instagram icon-glow"></i> Instagram: <a href="https://www.instagram.com/agile.systems/" target="_blank">@agile.systems</a></p>
+                <p><i class="fas fa-envelope icon-glow"></i> Email: <a href="mailto:giovani.dev@outlook.com.br">giovani.dev@outlook.com.br</a></p>
+                <p><i class="fab fa-linkedin icon-glow"></i> LinkedIn: <a href="https://www.linkedin.com/in/giovaniidias/" target="_blank">linkedin.com/in/giovaniidias/</a></p>
+                {# Adicione GitHub, se desejar #}
+                <p><i class="fab fa-github icon-glow"></i> GitHub: <a href="https://github.com/GiovaniiDias" target="_blank">github.com/GiovaniiDias</a></p>
+            </div>
+            {# Você pode adicionar um formulário de contato aqui futuramente #}
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Agile Systems. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
